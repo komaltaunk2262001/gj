@@ -1,0 +1,32 @@
+pragma solidity 0.4.18 <= 0.6.12;
+
+contract komaltaunk22
+{
+    string custname;
+    int amtinvoice;
+    string carmodel;
+    string invoicenumber;
+    string colorofcar;
+     
+     
+    
+     function komaltaunk22( string newcustname, int newamtvoice ,string newcarmodel , string newinvoicenumber, string newcolorofcar
+    ) public
+    {
+    custname=newcustname;
+    amtinvoice=newamtvoice;
+    carmodel=newcarmodel;
+    invoicenumber=newinvoicenumber;
+    colorofcar=newcolorofcar;
+    }
+    
+    function getkomaltaunk22() public view returns(string,int,string,string,string)
+    {
+        return( custname,amtinvoice,carmodel,invoicenumber,colorofcar);
+    }
+    
+}
+
+
+
+
